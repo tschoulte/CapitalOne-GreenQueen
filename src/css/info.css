@@ -1,0 +1,62 @@
+.mainlogo {
+  font-family: 'Coiny', cursive;
+  font-size: 80px;
+  color: #5BAD45;
+}
+
+.headingsidebar {
+  color: #EDE6D7;
+  padding-top: 12px;
+  font-size: 14px;
+}
+
+.customframelower {
+  padding-top: 70px;
+}
+
+.undermainlogo {
+  font-family: 'Staatliches', cursive;
+}
+
+.transferlabel {
+  font-size: 24px;
+  color:#5BAD45;
+}
+
+.firstlabel {
+  font-size: 50px;
+}
+
+.secondlabel {
+  font-family: 'Coiny', cursive;
+  font-size: 50px;
+  color: #5BAD45;
+}
+
+.textboxes1 {
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+.textboxes1:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.textboxes2 {
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+.textboxes2:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.topofinput {
+  padding: 0;
+}
+
+.textboxes3 {
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+.textboxes3:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

@@ -1,0 +1,13 @@
+.toptitle {
+  text-align: center;
+}
+
+.navbar {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    width: 100vw;
+    height: 5vw;
+    border-bottom: solid 2px #251605;
+}

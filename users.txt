@@ -1,0 +1,57 @@
+Customers:
+Abbey Hite: 5c379362b8e2a665da3decdd
+    Checking: 5c379372b8e2a665da3decde
+    Savings: 5c379378b8e2a665da3decdf
+
+John Ross:5c3792e8b8e2a665da3decd9
+    Checking: 5c379303b8e2a665da3decda
+    Savings: 5c37930bb8e2a665da3decdb
+
+Savannah Rose: 5c378f0eb8e2a665da3decd4
+    Checking: 5c37919bb8e2a665da3decd7
+    Savings: 5c378f3eb8e2a665da3decd5    
+
+POST New Customer:
+    http://api.reimaginebanking.com/customers?key=a36c15316b48acb42a12d86f36ec6899
+
+    {
+  "first_name": "Abbey",
+  "last_name": "Hite",
+  "address": {
+    "street_number": "101",
+    "street_name": "Deerfield Street",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "98827"
+        }
+    }
+
+POST New Account (for a customer under CUSTOMER_ID):
+
+    Insert the customer ID:
+    #Type: "Checking", "Savings", "Credit Card"
+
+    http://api.reimaginebanking.com/customers/###CUSTOMER_ID#####/accounts?key=a36c15316b48acb42a12d86f36ec6899
+    {
+    "type": "Savings",
+    "nickname": "Personal Savings",
+    "rewards": 1,
+    "balance": 500
+    }
+
+GET Accounts (for a customer under CUSTOMER_ID):
+
+    http://api.reimaginebanking.com/customers/###CUSTOMER_ID#####/accounts?key=a36c15316b48acb42a12d86f36ec6899
+
+POST Transfer (from WITHDRAWL_ACCOUNT to payee_id):
+
+    Insert the customer's TRANSFER_TO_ACCOUNT:
+    http://api.reimaginebanking.com/accounts/###WITHDRAWL_ACCOUNT###/transfers?key=a36c15316b48acb42a12d86f36ec6899
+
+    {
+  "medium": "balance",
+  "payee_id": "5c379378b8e2a665da3decdf",
+  "transaction_date": "2019-01-10",
+  "status": "pending",
+  "amount":50
+    }

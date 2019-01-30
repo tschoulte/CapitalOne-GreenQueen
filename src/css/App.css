@@ -1,0 +1,42 @@
+.icon-bar {
+  width: 100px; /* Set a specific width */
+}
+
+.icon-bar a {
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.4s ease; /* Add transition for hover effects */
+  color: #EDE6D7; /* White text color */
+  font-size: 36px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+  background-color: #EDE6D7; /* Add a hover color */
+  color: #3A2308;
+}
+
+
+.active {
+  /* background-color: white; /* Add an active/current color */
+}
+
+.rectangle {
+  height: 100vh;
+  width: 100px;
+  background-color: #3A2308;
+  overflow-y: scroll;
+}
+
+.navbarbg {
+  background-color:white;
+}
+
+.line {
+  padding-top: 12px;
+  line-height: 80%;
+}
+
+.max {
+  max-height: 100vh
+}
